@@ -1,18 +1,55 @@
+import React, { useState } from 'react';
 
-import { useNavigate } from 'react-router-dom'; 
+const Contactme = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
-const Contact = () => {  // <-- Cambia de "Home" a "About"
-  const navigate = useNavigate();  // <-- Hook para navegación
+  const handleOnchange = (event) => {
+    const { name, value } = event.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    console.log(form);
+  };
 
   return (
-    <>
-        <h1>Contact</h1>
-        <p>giannixavier10@gmail.com</p>
-        <button className="btn-nav" onClick={() => navigate("/")}>
-            Go Home
-        </button>       
-    </>
+    <div>
+      Contactme
+      <div>
+        <div style={{ display: 'flex', gap: '20px' }}>
+          <input
+            name="name"
+            type="text"
+            value={form.name}
+            onChange={handleOnchange}
+          />
+          <input
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleOnchange}
+          />
+        </div>
+        <div style={{ paddingTop: '20px' }}>
+          <textarea
+            name="message"
+            type="message"
+            rows="10"
+            cols="50"
+            value={form.message}
+            onChange={handleOnchange}
+          />
+        </div>
+        <button style={{ width: '140px', height: '40px' }}>Contact Me</button>
+      </div>
+      <button>Go Back</button>
+    </div>
   );
 };
 
-export default Contact;
+export default Contactme;
