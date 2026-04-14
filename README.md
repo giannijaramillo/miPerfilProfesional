@@ -1,16 +1,10 @@
-# React + Vite
+# 💻 Professional Software Engineering Portfolio
+Mi ecosistema digital como estudiante de ITC @ ITESM, diseñado para demostrar la integración de servicios modernos en la nube.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Highlights Técnicos
+* **Cloud Messaging:** Integración de la **API de Resend** mediante Serverless Functions para una gestión de contactos segura y escalable.
+* **Framework:** React con arquitectura de componentes reutilizables.
+* **Deployment:** Pipeline de CI/CD automatizado en **Vercel**.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Objetivo
+Servir como un hub centralizado para mis proyectos de ingeniería, demostrando habilidades tanto en UI/UX como en la implementación de APIs de servicios externos.
