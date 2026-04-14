@@ -32,17 +32,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Opcional: una línea decorativa debajo */
-.main-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #ff00ff; /* Un toque de color neón/contraste */
-    margin: 10px auto;
-    border-radius: 2px;
-}
-
 header {
     width: 100%;
     display: flex;

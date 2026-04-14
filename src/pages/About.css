@@ -5,10 +5,10 @@
 }
 
 .about-title {
-  font-size: 3.06rem;
+  font-size: 2.6rem;
   color: white;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: -1px;
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
@@ -17,48 +17,48 @@
 
 .about-profile {
   color: rgba(187, 0, 187, 0.9);
-  font-size: 1.25rem;
+  font-size: 1.06rem;
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   letter-spacing: 0.5px;
 }
 
 .about-section {
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
 
 .about-text {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 1.02rem;
+  font-size: 0.87rem;
   font-family: 'Georgia', 'Garamond', serif;
   line-height: 1.8;
   font-weight: 300;
   text-align: left;
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
 }
 
 .about-subtitle {
   color: white;
-  font-size: 1.87rem;
+  font-size: 1.59rem;
   font-weight: 600;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   letter-spacing: -0.5px;
   border-left: 4px solid rgba(187, 0, 187, 0.6);
-  padding-left: 15px;
+  padding-left: 13px;
 }
 
 .about-values {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 22px;
-  margin-top: 19px;
+  gap: 19px;
+  margin-top: 16px;
 }
 
 .value-item {
   background: rgba(255, 255, 255, 0.03);
   border-left: 3px solid rgba(187, 0, 187, 0.5);
-  padding: 15px;
-  padding-left: 19px;
+  padding: 13px;
+  padding-left: 16px;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
@@ -70,15 +70,15 @@
 
 .value-title {
   color: #bb00bb;
-  font-size: 1.25rem;
+  font-size: 1.06rem;
   font-weight: 600;
-  margin: 0 0 7px 0;
+  margin: 0 0 6px 0;
   letter-spacing: 0.3px;
 }
 
 .value-text {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.97rem;
+  font-size: 0.82rem;
   font-family: 'Georgia', 'Garamond', serif;
   line-height: 1.7;
   margin: 0;

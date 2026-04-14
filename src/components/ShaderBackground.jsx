@@ -215,10 +215,11 @@ const ShaderBackground = () => {
     <canvas 
       ref={canvasRef} 
       style={{
-        position: 'absolute',
+        position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
+        height: '100vh',
         display: 'block',
         zIndex: -2
       }}

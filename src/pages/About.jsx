@@ -15,42 +15,42 @@ const About = () => {
 
       <section className="about-section">
         <p className="about-text">
-          Me gusta ver el software como un rompecabezas de arquitectura y lógica donde el límite es la creatividad. 
-          Como estudiante de Ingeniería en Tecnologías Computacionales, disfruto experimentar con la eficiencia de los 
-          algoritmos y, al mismo tiempo, construir interfaces web que realmente funcionen para el usuario.
+          I view software as a puzzle of architecture and logic where creativity is the only limit. 
+          As a Computer Technology Engineering student, I enjoy experimenting with algorithm efficiency 
+          while building web interfaces that truly work for users.
         </p>
 
         <p className="about-text">
-          He trabajado con C++, Python y SQL para resolver problemas complejos, como procesar grandes volúmenes de datos 
-          mediante algoritmos de grafos (Dijkstra) para rastrear ataques de bots. Este tipo de retos me enseñó que los 
-          datos cuentan información reveladora si sabes cómo manipularlos.
+          I have worked with C++, Python, and SQL to solve complex problems, such as processing large data volumes 
+          using graph algorithms (Dijkstra) to track bot attacks. These challenges taught me that data tells 
+          revealing stories if you know how to manipulate it.
         </p>
       </section>
 
       <section className="about-section">
-        <h2 className="about-subtitle">¿Qué aporto más allá del código?</h2>
+        <h2 className="about-subtitle">What I Bring Beyond Code</h2>
 
         <div className="about-values">
           <div className="value-item">
-            <h3 className="value-title">Criterio de programador</h3>
+            <h3 className="value-title">Developer's Judgment</h3>
             <p className="value-text">
-              Entiendo que mi trabajo es facilitar el camino al cliente, no complicarlo con tecnicismos.
+              I understand that my job is to facilitate the path for clients, not complicate it with technical jargon.
             </p>
           </div>
 
           <div className="value-item">
-            <h3 className="value-title">Sinergia en equipo</h3>
+            <h3 className="value-title">Team Synergy</h3>
             <p className="value-text">
-              Me muevo bien en entornos de metodologías ágiles donde la comunicación clara y la distribución de roles 
-              son clave para que el flujo de trabajo no se detenga.
+              I thrive in Agile environments where clear communication and role distribution are key to keeping 
+              workflow momentum moving forward.
             </p>
           </div>
 
           <div className="value-item">
-            <h3 className="value-title">Visión de liderazgo</h3>
+            <h3 className="value-title">Leadership Vision</h3>
             <p className="value-text">
-              Mi meta a largo plazo es dirigir equipos técnicos. Creo firmemente en crear espacios donde cada integrante 
-              explote sus fortalezas y el grupo se apoye en sus debilidades para sacar proyectos adelante.
+              My long-term goal is to lead technical teams. I firmly believe in creating spaces where each member 
+              leverages their strengths and the team supports each other's growth to drive projects forward.
             </p>
           </div>
         </div>

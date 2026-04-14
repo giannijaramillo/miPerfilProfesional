@@ -40,7 +40,7 @@ const Contactme = () => {
 
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Contáctame</h1>
+      <h1 className="contact-title">Get In Touch</h1>
       
       <form className="contact-form" onSubmit={handleSendEmail}>
         <div className="form-row">
@@ -48,7 +48,7 @@ const Contactme = () => {
             <input
               name="name"
               type="text"
-              placeholder="Tu nombre"
+              placeholder="Your Name"
               value={form.name}
               onChange={handleOnchange}
             />
@@ -57,7 +57,7 @@ const Contactme = () => {
             <input
               name="email"
               type="email"
-              placeholder="Tu email"
+              placeholder="Your Email"
               value={form.email}
               onChange={handleOnchange}
             />
@@ -68,7 +68,7 @@ const Contactme = () => {
           <input
             name="subject"
             type="text"
-            placeholder="Asunto"
+            placeholder="Subject"
             value={form.subject}
             onChange={handleOnchange}
           />
@@ -77,7 +77,7 @@ const Contactme = () => {
         <div className="form-group">
           <textarea
             name="message"
-            placeholder="Tu mensaje"
+            placeholder="Your Message"
             value={form.message}
             onChange={handleOnchange}
           />

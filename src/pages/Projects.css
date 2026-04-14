@@ -127,6 +127,32 @@
   border-bottom-color: #ff00ff;
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tech-flag {
+  display: inline-block;
+  background: rgba(187, 0, 187, 0.15);
+  border: 1px solid rgba(187, 0, 187, 0.4);
+  color: rgba(187, 0, 187, 0.9);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.tech-flag:hover {
+  background: rgba(187, 0, 187, 0.25);
+  border-color: rgba(187, 0, 187, 0.7);
+  color: #ff00ff;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
