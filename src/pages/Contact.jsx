@@ -9,6 +9,7 @@ const Contactme = () => {
     subject: '',
     message: '',
   });
+  const [successMessage, setSuccessMessage] = useState('');
   
   const navigate = useNavigate();
 
@@ -36,11 +37,24 @@ const Contactme = () => {
 
     const res = await data.json();
     console.log(res);
+
+    if (data.ok) {
+      setSuccessMessage('¡Correo enviado exitosamente!');
+      setForm({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+      setTimeout(() => setSuccessMessage(''), 5000);
+    }
   };
 
   return (
     <div className="contact-container">
       <h1 className="contact-title">Get In Touch</h1>
+      
+      {successMessage && <p className="success-message">{successMessage}</p>}
       
       <form className="contact-form" onSubmit={handleSendEmail}>
         <div className="form-row">
