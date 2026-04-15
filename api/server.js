@@ -1,6 +1,5 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const handler = async (req, res) => {
   if (req.method !== 'POST') {
@@ -8,10 +7,16 @@ const handler = async (req, res) => {
   }
 
   try {
+    // Initialize inside handler so we can catch missing API key
+    if (!process.env.RESEND_API_KEY) {
+      return res.status(500).json({ error: 'RESEND_API_KEY not configured' });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { name, message, email, subject } = req.body;
 
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
+      from: 'onboarding@resend.dev',
       to: 'giannixavier10@gmail.com',
       subject: subject || 'Nuevo mensaje de contacto',
       html: `<p><strong>De:</strong> ${email}</p>
@@ -21,7 +26,7 @@ const handler = async (req, res) => {
     });
 
     return res.status(200).json({ data });
-    } catch (error) {
+  } catch (error) {
     console.error('Email error:', error);
     return res.status(502).json({ error: error.message || 'Failed to send email' });
   }
