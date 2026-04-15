@@ -21,8 +21,9 @@ const handler = async (req, res) => {
     });
 
     return res.status(200).json({ data });
-  } catch (error) {
-    return res.status(502).json({ error });
+    } catch (error) {
+    console.error('Email error:', error);
+    return res.status(502).json({ error: error.message || 'Failed to send email' });
   }
 };
 
