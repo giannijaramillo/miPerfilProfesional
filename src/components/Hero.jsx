@@ -10,18 +10,13 @@ const Hero = () => {
 
       <p className="main-text">
 
-        Architecting <span className='secondary-text'>Digital Artifacts</span>
+        Building Software That Matters.
 
       </p>
 
       <p className="sub-text">
 
-        Full-stack developer specializing in building high-performance, visually
-
-        stunning web experiences that live at the intersection of design and
-
-        data.
-
+       ITC Student @ Tec GDL · Award-winning developer · Open to internships.
       </p>
 
     </div>
