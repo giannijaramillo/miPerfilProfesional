@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Projects.css';
 
@@ -62,8 +61,6 @@ const ProjectCard = ({ title, description, date, githubLink, images, techStack }
 };
 
 const Projects = () => {
-  const navigate = useNavigate();
-
   const projectsData = [
     {
       title: "Arithmetic Logic Engine",
@@ -90,17 +87,14 @@ const Projects = () => {
   ];
 
   return (
-    <>
+    <section id="projects-section">
       <h1 className="projects-title">Projects</h1>
       <div className="projects-container">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-      <button className="btn-nav" onClick={() => navigate("/")}>
-        Go Home
-      </button>   
-    </>
+    </section>
   );
 };
 

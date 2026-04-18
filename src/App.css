@@ -12,34 +12,6 @@ body {
 }
 
 
-.main-title {
-    font-size: 3rem;           /* Un tamaño más imponente */
-    text-align: center;        /* Centrado perfecto */
-    color: white;              /* Blanco para que resalte sobre el púrpura */
-    margin-top: 0;
-    margin-bottom: 20px;
-    letter-spacing: 0px;       /* Space Mono tiene mejor espaciado */
-    text-transform: uppercase; /* Todo en mayúsculas para darle fuerza */
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    
-    /* Sombra suave para darle profundidad */
-    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-    
-    /* Un pequeño detalle de degradado si el navegador lo permite */
-    background: linear-gradient(to right, #ffffff, #dcdcdc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente a sus hijos */
-}
-
-
 .btn-nav {
     background-color: #60058a; /* Magenta más oscuro y menos brillante */
     color: white;

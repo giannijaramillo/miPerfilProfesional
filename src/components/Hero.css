@@ -1,17 +1,5 @@
 /* Hero.css */
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -23,42 +11,68 @@
   }
 }
 
-.main-text {
-  text-align: center;
-  font-size: 96px;
-  font-weight: bold;
-  color: white;
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
   animation: fadeIn 1s ease-out forwards;
 }
 
-.secondary-text {
+.main-text {
   text-align: center;
-  background: linear-gradient(
-    270deg,
-    #e0aaff,
-    #ebf8e1,
-    #cf5cff,
-    #e0aaff
-  );
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
-  animation: gradient 15s ease infinite;
-  font-weight: bold;
-  font-size: 96px;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  animation: fadeIn 1s ease-out forwards;
 }
 
-.sub-text {
+.subtitle {
   text-align: center;
-  font-size: 1.2rem;
-  color: white;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   max-width: 900px;
-  margin: 20px auto 0;
+  margin: 0 auto 40px auto;
   letter-spacing: 0.3px;
-  opacity: 0.95;
+}
+
+.cta-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cta-button:hover {
+  background: white;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 30px 16px 30px 16px;
+  }
+  
+  .main-text {
+    margin-bottom: 16px;
+  }
 }

@@ -1,9 +1,7 @@
 
-import { useNavigate } from 'react-router-dom';
 import './About.css';
 
 const About = () => {  
-  const navigate = useNavigate(); 
 
   return (
     <div className="about-container">
@@ -55,10 +53,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <button className="btn-nav" onClick={() => navigate("/")}>
-        Go Home
-      </button>    
     </div>
   );
 };

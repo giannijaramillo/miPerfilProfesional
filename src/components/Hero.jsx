@@ -1,12 +1,16 @@
 import './Hero.css';
-
-
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleScrollToProjects = () => {
+    navigate('/projects');
+  };
 
   return (
 
-    <div>
+    <div className="hero-container">
 
       <p className="main-text">
 
@@ -14,10 +18,15 @@ const Hero = () => {
 
       </p>
 
-      <p className="sub-text">
+      <p className="subtitle">
 
-       ITC Student @ Tec GDL · Award-winning developer · Open to internships.
+        Computer Science student at Tec de Monterrey · AgroDataThón 2024 Winner · Open to internships.
+
       </p>
+
+      <button className="cta-button" onClick={handleScrollToProjects}>
+        View My Work
+      </button>
 
     </div>
 

@@ -1,7 +1,7 @@
 .about-container {
   max-width: 950px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 120px;
 }
 
 .about-title {
@@ -93,5 +93,31 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 40px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 20px;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
   }
 }

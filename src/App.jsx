@@ -9,9 +9,6 @@ function App() {
     <>
       <ShaderBackground />
       <FloatingPaths />
-      <header>
-        <h1 className="main-title">Gianni Jaramillo | Portfolio</h1>
-      </header>
       <Navbar>
         <Outlet />
       </Navbar>
